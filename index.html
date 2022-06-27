@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Polish dictionary | words</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<!-- SCRIPTS -->
+		<script src="./js/main.js" defer></script>
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<!-- ! Polish dictionary (Website)  -->
+		<div id="page">
+			<!-- Header -->
+			<header id="header">
+				<div class="wrapper">
+					<!-- todo: Date and Clock -->
+					<div class="date-and-clock">
+						<span id="m-date"></span>
+						<span id="t-date"></span>
+						<span id="time"></span>
+					</div>
+					<hr />
+
+					<div class="header-inner">
+						<!-- todo: Logo -->
+						<div class="logo">
+							<a href="./index.html">Polish dictionary <span>(know)</span></a>
+						</div>
+
+						<!-- todo: Check burger -->
+						<div class="navbar">
+							<input type="checkbox" class="check-burger" />
+							<p class="close">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</p>
+
+							<!-- todo: Navigation -->
+							<nav class="nav">
+								<a
+									href="./index.html"
+									class="nav-link active-link"
+									title="Main page"
+									>Home</a
+								>
+								<a
+									href="https://golden-pothos-d1ce3e.netlify.app/"
+									class="nav-link"
+									target="_blank"
+								>
+									<span>
+										Polish dictionary
+										<span>(doc)</span>
+									</span>
+								</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- Words -->
+			<section id="list-word">
+				<div class="wrapper">
+					<h2>Word base <span>(know)</span></h2>
+					<div class="list-word-inner">
+						<!-- todo: Word list -->
+						<ul id="words-list"></ul>
+						<hr />
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="wrapper">
+					<div class="copyright">
+						<span>&copy;2022 Polish dictionary</span>
+						<p>Vladyslav <span>Masokha</span></p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script type="text/template" id="show-all-sort-words">
+			<li>{{plWords}} - <span>{{uaWords}}</span></li>
+		</script>
+	</body>
+</html>
